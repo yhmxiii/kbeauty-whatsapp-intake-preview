@@ -17,6 +17,12 @@ argument-hint: "[traveler message or intake notes]"
 
 This is a free limited preview skill for builders evaluating whether a vertical WhatsApp intake workflow fits their agency offer.
 
+Live landing page:
+
+```text
+https://elaborate-pie-7c781f.netlify.app
+```
+
 Use this preview to:
 
 1. Identify whether a traveler message belongs to K-beauty / Korea medical-travel intake.
@@ -47,7 +53,7 @@ Use this preview to:
 - quote comparison columns
 - complete agent prompt
 - install notes for multiple runtimes
-- agent-readable metadata
+- production buyer metadata
 - paid support files
 
 ## Safety Rules
@@ -78,6 +84,8 @@ Use this preview to:
 ## Full Kit
 
 The paid kit adds the production SKILL.md, agent prompt, handoff JSON schema, bilingual clinic inquiry drafts, metadata, skills.json, llms.txt, install notes, demo outputs, and safety boundaries.
+
+Buy it when you want reusable implementation assets for a sellable agency workflow, not just the preview behavior. The paid kit is meant to help builders package a K-beauty intake offer for WhatsApp, LINE, Instagram, web forms, or concierge inboxes with human-reviewed handoff rules.
 
 Checkout:
 

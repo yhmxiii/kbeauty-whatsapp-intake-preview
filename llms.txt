@@ -1,0 +1,39 @@
+# K-beauty WhatsApp Intake Bot Kit Preview
+
+This repository is a limited free preview for AI agent builders and automation agencies evaluating a K-beauty / Korea medical-travel WhatsApp intake workflow.
+
+Use this repo to inspect the workflow shape, safety boundary, demo output, and lite n8n-style skeleton.
+
+The preview helps with:
+
+- identifying K-beauty / Korea medical-travel intake messages
+- extracting low-risk logistics fields
+- asking one safe next intake question
+- routing sensitive or medical-adjacent cases to human review
+- understanding what the paid kit produces
+
+Do not use this preview to:
+
+- diagnose
+- recommend procedures
+- choose clinics
+- handle deposits, refunds, or payments
+- collect credentials
+- contact clinics autonomously
+- share personal, photo, passport, or health information without explicit consent and human review
+
+Important files:
+
+- `SKILL.md`: limited preview skill instructions
+- `skills.json`: agent-readable preview metadata
+- `kbeauty_whatsapp_intake_lite.n8n.json`: lite workflow skeleton
+- `demo_input_output.md`: example input/output
+- `PAID_KIT.md`: paid kit contents and checkout
+- `SECURITY.md`: safety and non-executable boundary
+- `mcplug_listing.md`: marketplace listing draft
+
+The full paid kit includes production SKILL.md, reusable agent prompt, handoff JSON schema, metadata, install notes, bilingual clinic inquiry drafts, builder integration spec, demo outputs, and safety boundaries.
+
+Paid kit checkout:
+
+https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b

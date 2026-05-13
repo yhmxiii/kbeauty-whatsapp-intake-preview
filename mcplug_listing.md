@@ -17,7 +17,7 @@ Free preview
 ## Category
 
 ```text
-AI Skills
+Automation
 ```
 
 ## Code URL

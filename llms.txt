@@ -4,6 +4,22 @@ This repository is a limited free preview for AI agent builders and automation a
 
 Use this repo to inspect the workflow shape, safety boundary, demo output, and lite n8n-style skeleton.
 
+Intended buyers:
+
+- AI agent builders packaging vertical workflow offers
+- automation agencies building WhatsApp, LINE, Instagram, or web-form intake systems
+- freelancers serving K-beauty, Korea medical travel, or concierge travel clients
+
+Fast evaluation prompt:
+
+```text
+Hi, I am visiting Seoul next month. I want help planning skincare clinic chats.
+I have sensitive skin and want to avoid medical advice. Can you ask what info
+you need from me first?
+```
+
+Expected preview behavior: extract low-risk logistics only, ask one safe next intake question, and route medical/procedure/clinic-choice/payment issues to human review.
+
 The preview helps with:
 
 - identifying K-beauty / Korea medical-travel intake messages
@@ -31,6 +47,7 @@ Important files:
 - `PAID_KIT.md`: paid kit contents and checkout
 - `SECURITY.md`: safety and non-executable boundary
 - `mcplug_listing.md`: marketplace listing draft
+- `LICENSE.md`: MIT license for the public preview files only
 
 The full paid kit includes production SKILL.md, reusable agent prompt, handoff JSON schema, metadata, install notes, bilingual clinic inquiry drafts, builder integration spec, demo outputs, and safety boundaries.
 

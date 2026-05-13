@@ -1,6 +1,6 @@
-# MCPlug Listing Draft
+# MCPlug Listing Copy
 
-Status: draft only. Do not publish until Captain approves a public repo/package URL and the exact MCPlug action.
+Use this copy for an agent-skill marketplace listing that accepts a public code URL.
 
 ## Title
 
@@ -23,7 +23,7 @@ AI Skills
 ## Code URL
 
 ```text
-PENDING_PUBLIC_REPO_URL
+https://github.com/yhmxiii/kbeauty-whatsapp-intake-preview
 ```
 
 ## Short Description
@@ -54,10 +54,4 @@ send_allowed=false
 
 ```text
 https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b
-```
-
-## Approval Phrase
-
-```text
-MCPlug listing 제출 승인
 ```

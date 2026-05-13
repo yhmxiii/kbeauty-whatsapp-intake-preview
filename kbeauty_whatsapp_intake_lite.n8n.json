@@ -1,0 +1,348 @@
+{
+  "name": "K-beauty WhatsApp Intake Lite Demo",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "PLACEHOLDER_WEBHOOK_PATH",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-inbound-message",
+      "name": "Webhook - Inbound WhatsApp Message",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "notes": "Demo only. Replace path in your own n8n instance. Do not paste live credentials or secret URLs into the shared template."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "field-message-text",
+              "name": "message_text",
+              "type": "string",
+              "value": "={{ $json.body?.message || $json.message || $json.text || '' }}"
+            },
+            {
+              "id": "field-user-handle",
+              "name": "user_handle",
+              "type": "string",
+              "value": "={{ $json.body?.from || $json.from || 'PLACEHOLDER_USER' }}"
+            },
+            {
+              "id": "field-channel",
+              "name": "channel",
+              "type": "string",
+              "value": "whatsapp_placeholder"
+            },
+            {
+              "id": "field-received-at",
+              "name": "received_at",
+              "type": "string",
+              "value": "={{ $now.toISO() }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-normalize-fields",
+      "name": "Set - Normalize Intake Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Keep this generic. Add provider-specific field mapping only in a private copy."
+    },
+    {
+      "parameters": {
+        "mode": "manualMapping",
+        "jsCode": "const text = $json.message_text || '';\nconst lower = text.toLowerCase();\nconst handoffTerms = ['diagnose', 'procedure should i get', 'urgent', 'emergency', 'pay now', 'which clinic'];\nconst handoffRequired = handoffTerms.some((term) => lower.includes(term));\nreturn [{\n  json: {\n    ...$json,\n    llm_classification_raw: JSON.stringify({\n      handoff_required: handoffRequired,\n      intent: 'kbeauty_trip_intake',\n      risk_level: handoffRequired ? 'needs_human_review' : 'low',\n      known_fields: {},\n      missing_fields: ['travel_dates', 'preferred_language', 'budget_range'],\n      safety_notes: ['No medical advice, diagnosis, procedure recommendation, clinic choice, or payment handling.']\n    })\n  }\n}];"
+      },
+      "id": "llm-intake-classification-placeholder",
+      "name": "LLM Intake Classification - Placeholder",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ],
+      "notes": "Replace this with your private LLM node or model call. Keep prompts and API credentials outside the public demo."
+    },
+    {
+      "parameters": {
+        "mode": "manualMapping",
+        "jsCode": "const fallback = {\n  handoff_required: true,\n  intent: 'parse_error',\n  risk_level: 'needs_human_review',\n  known_fields: {},\n  missing_fields: [],\n  safety_notes: ['Classification JSON failed validation; route to human review.']\n};\nlet parsed;\ntry {\n  parsed = JSON.parse($json.llm_classification_raw || '{}');\n} catch (error) {\n  parsed = fallback;\n}\nconst valid = typeof parsed.handoff_required === 'boolean' && typeof parsed.intent === 'string';\nconst classification = valid ? parsed : fallback;\nreturn [{ json: { ...$json, classification } }];"
+      },
+      "id": "json-parse-validation-placeholder",
+      "name": "JSON Parse / Validation - Placeholder",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ],
+      "notes": "Demo validation only. Paid/private builds should use stricter schema checks."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "handoff-required-condition",
+              "leftValue": "={{ $json.classification.handoff_required }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-handoff-required",
+      "name": "IF - handoff_required",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        960,
+        0
+      ],
+      "notes": "True branch goes to human handoff. False branch prepares the next safe intake question."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "handoff-message",
+              "name": "handoff_notification",
+              "type": "string",
+              "value": "PLACEHOLDER_HUMAN_HANDOFF: Review this intake before any reply. Do not provide medical advice, clinic choice, procedure recommendation, or payment handling."
+            },
+            {
+              "id": "handoff-payload",
+              "name": "handoff_payload",
+              "type": "object",
+              "value": "={{ { user_handle: $json.user_handle, message_text: $json.message_text, classification: $json.classification, received_at: $json.received_at } }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "human-handoff-notification-placeholder",
+      "name": "Human Handoff Notification - Placeholder",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1200,
+        -120
+      ],
+      "notes": "Replace with Slack, email, CRM, or queue node only in a private workflow with approved credentials."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "next-question-reply",
+              "name": "reply_text",
+              "type": "string",
+              "value": "Thanks. I can help collect trip and communication details, but I cannot provide medical advice or recommend procedures. What are your travel dates, preferred language, budget range, and preferred Seoul area?"
+            },
+            {
+              "id": "reply-status",
+              "name": "reply_status",
+              "type": "string",
+              "value": "ready_for_private_whatsapp_send_node"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "next-question-reply-placeholder",
+      "name": "Next-Question Reply - Placeholder",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1200,
+        120
+      ],
+      "notes": "This prepares reply text only. Add a private WhatsApp send node after account approval."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "storage-record",
+              "name": "storage_record",
+              "type": "object",
+              "value": "={{ { user_handle: $json.user_handle, message_text: $json.message_text, classification: $json.classification, reply_text: $json.reply_text || null, handoff_notification: $json.handoff_notification || null, received_at: $json.received_at } }}"
+            },
+            {
+              "id": "storage-note",
+              "name": "storage_note",
+              "type": "string",
+              "value": "PLACEHOLDER_STORAGE_ONLY: connect Airtable, Sheets, Postgres, Notion, or file storage in a private copy."
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "storage-placeholder",
+      "name": "Storage - Placeholder",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1440,
+        0
+      ],
+      "notes": "No external storage is configured in this demo."
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { ok: true, demo_only: true, handoff_required: $json.classification?.handoff_required ?? null, reply_text: $json.reply_text || null, handoff_notification: $json.handoff_notification || null } }}",
+        "options": {}
+      },
+      "id": "respond-to-webhook",
+      "name": "Respond to Webhook - Demo Result",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1680,
+        0
+      ],
+      "notes": "For local testing only. Do not expose without reviewing privacy and platform policy."
+    }
+  ],
+  "connections": {
+    "Webhook - Inbound WhatsApp Message": {
+      "main": [
+        [
+          {
+            "node": "Set - Normalize Intake Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set - Normalize Intake Fields": {
+      "main": [
+        [
+          {
+            "node": "LLM Intake Classification - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM Intake Classification - Placeholder": {
+      "main": [
+        [
+          {
+            "node": "JSON Parse / Validation - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JSON Parse / Validation - Placeholder": {
+      "main": [
+        [
+          {
+            "node": "IF - handoff_required",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF - handoff_required": {
+      "main": [
+        [
+          {
+            "node": "Human Handoff Notification - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Next-Question Reply - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Human Handoff Notification - Placeholder": {
+      "main": [
+        [
+          {
+            "node": "Storage - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Next-Question Reply - Placeholder": {
+      "main": [
+        [
+          {
+            "node": "Storage - Placeholder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Storage - Placeholder": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook - Demo Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "UTC"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "lite-demo"
+    },
+    {
+      "name": "safe-placeholder"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2026-05-13T00:00:00.000Z",
+  "versionId": "lite-demo-placeholder"
+}

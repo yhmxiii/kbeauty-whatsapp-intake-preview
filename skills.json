@@ -29,7 +29,8 @@
         "demo_input_output.md",
         "PAID_KIT.md",
         "SECURITY.md",
-        "mcplug_listing.md"
+        "mcplug_listing.md",
+        "LICENSE.md"
       ],
       "not_included_preview_only": [
         "full handoff JSON schema",

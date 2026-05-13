@@ -1,6 +1,16 @@
 ---
 name: kbeauty-whatsapp-intake-preview
 description: Use when previewing the shape of a K-beauty or Korea medical-travel WhatsApp intake workflow; shows safe next-question and handoff routing logic without the full paid handoff schema, bilingual clinic drafts, metadata, or implementation pack.
+author: yhmxiii
+version: "0.1.0-preview"
+tags:
+  - k-beauty
+  - whatsapp
+  - intake
+  - medical-travel
+  - automation
+allowed-tools: []
+argument-hint: "[traveler message or intake notes]"
 ---
 
 # K-beauty WhatsApp Intake Preview

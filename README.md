@@ -26,6 +26,7 @@ demo_input_output.md
 PAID_KIT.md
 SECURITY.md
 mcplug_listing.md
+LICENSE.md
 ```
 
 ## Paid Kit
@@ -76,3 +77,7 @@ llms.txt
 ```
 
 These files describe the limited preview only. They do not include the full paid schema, clinic drafts, install pack, or implementation notes.
+
+## License
+
+Files in this public preview repository are MIT licensed. The paid kit materials are not included in this repository and are not covered by this preview license.

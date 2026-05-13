@@ -1,0 +1,56 @@
+{
+  "skills": [
+    {
+      "name": "kbeauty-whatsapp-intake-preview",
+      "title": "K-beauty WhatsApp Intake Bot Kit Preview",
+      "description": "Limited public preview of a safe K-beauty / Korea medical-travel WhatsApp intake workflow for agent builders and automation agencies.",
+      "version": "0.1.0-preview",
+      "price": "free-preview",
+      "paid_kit_price_usd": 19,
+      "buyer": [
+        "AI agent builders",
+        "automation agencies",
+        "WhatsApp bot builders",
+        "clinic-intake automation freelancers",
+        "travel concierge workflow operators"
+      ],
+      "use_cases": [
+        "K-beauty traveler intake",
+        "Korea medical-travel inquiry triage",
+        "WhatsApp-style next-question flow",
+        "human handoff preparation",
+        "safe clinic-intake workflow scoping"
+      ],
+      "included_files": [
+        "README.md",
+        "SKILL.md",
+        "llms.txt",
+        "kbeauty_whatsapp_intake_lite.n8n.json",
+        "demo_input_output.md",
+        "PAID_KIT.md",
+        "SECURITY.md",
+        "mcplug_listing.md"
+      ],
+      "not_included_preview_only": [
+        "full handoff JSON schema",
+        "full agent prompt",
+        "English/Korean clinic inquiry draft library",
+        "builder integration spec",
+        "install notes for multiple runtimes",
+        "paid kit metadata"
+      ],
+      "safety": {
+        "medical_advice": false,
+        "diagnosis": false,
+        "procedure_recommendation": false,
+        "clinic_choice": false,
+        "payment_handling": false,
+        "credential_collection": false,
+        "autonomous_clinic_outreach": false,
+        "human_review_required": true,
+        "send_allowed": false
+      },
+      "checkout_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b"
+    }
+  ]
+}

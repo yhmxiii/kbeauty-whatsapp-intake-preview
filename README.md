@@ -4,6 +4,19 @@ Free public preview for agent builders and automation agencies evaluating a K-be
 
 This repo is intentionally limited. It shows the workflow shape, safety boundary, and a lite n8n-style skeleton without publishing the full paid kit.
 
+Live landing page:
+
+```text
+https://elaborate-pie-7c781f.netlify.app
+```
+
+## Buyer Path
+
+1. Inspect this public preview to confirm the niche, safety boundary, and workflow shape.
+2. Read the live landing page for the full offer, deliverables, and current buying options.
+3. Buy the $19 kit when you want the complete implementation assets in one ZIP.
+4. Use the $149 custom setup option when you want one intake path adapted for a real client workflow.
+
 ## Who This Is For
 
 - AI agent builders packaging vertical workflow offers
@@ -76,7 +89,23 @@ Checkout:
 https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b
 ```
 
-Use the paid kit when you want the complete production prompt, schema, install notes, bilingual clinic inquiry draft library, builder integration spec, and safety boundary files in one agent-ready ZIP.
+Custom setup:
+
+```text
+https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9bdce6d
+```
+
+## Why Buy The Paid Kit
+
+Buy the paid kit when you want to stop reverse-engineering the preview and start assembling a sellable automation offer. The preview proves the public workflow shape; the paid ZIP gives you the production prompt, full handoff schema, install notes, bilingual clinic inquiry draft library, builder integration spec, demo outputs, and safety boundary files needed to package the workflow for client delivery.
+
+For builders and agencies, the paid kit is useful because it turns a narrow vertical idea into concrete implementation material:
+
+- a reusable intake agent prompt instead of a loose chatbot brief
+- a handoff schema your automation can validate and store
+- bilingual clinic inquiry drafts kept behind human review
+- implementation notes for adapting WhatsApp, LINE, Instagram, web forms, or concierge inboxes
+- agent-readable metadata for marketplaces, coding agents, and buyer evaluation
 
 ## Safety Boundary
 
@@ -91,7 +120,11 @@ send_allowed=false
 
 ## Public Preview Use
 
-This repo is the free public preview. Use it to inspect the workflow shape, safety boundary, agent metadata, and lite automation skeleton before buying the full kit.
+This repo is the free public preview. Use it to inspect the workflow shape, safety boundary, agent metadata, and lite automation skeleton before buying the full kit. For the buyer-facing offer page, use:
+
+```text
+https://elaborate-pie-7c781f.netlify.app
+```
 
 ## Agent Discovery
 

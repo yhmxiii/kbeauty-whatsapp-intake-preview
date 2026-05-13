@@ -4,6 +4,30 @@ Free public preview for agent builders and automation agencies evaluating a K-be
 
 This repo is intentionally limited. It shows the workflow shape, safety boundary, and a lite n8n-style skeleton without publishing the full paid kit.
 
+## Who This Is For
+
+- AI agent builders packaging vertical workflow offers
+- automation agencies serving WhatsApp, LINE, Instagram, or web-form inquiry flows
+- freelancers building intake and handoff systems for K-beauty, Korea medical travel, or concierge travel clients
+- builders who want a concrete niche workflow instead of a generic chatbot demo
+
+## Try The Preview
+
+Use this sample traveler message with `SKILL.md`:
+
+```text
+Hi, I am visiting Seoul next month. I want help planning skincare clinic chats.
+I have sensitive skin and want to avoid medical advice. Can you ask what info
+you need from me first?
+```
+
+Expected behavior:
+
+```text
+Extract low-risk logistics only, ask one safe next intake question, and route
+medical/procedure/clinic-choice/payment issues to human review.
+```
+
 ## What This Preview Helps You Test
 
 - inbound WhatsApp-style message capture
@@ -51,6 +75,8 @@ Checkout:
 ```text
 https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b
 ```
+
+Use the paid kit when you want the complete production prompt, schema, install notes, bilingual clinic inquiry draft library, builder integration spec, and safety boundary files in one agent-ready ZIP.
 
 ## Safety Boundary
 

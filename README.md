@@ -62,9 +62,9 @@ human_review_required=true
 send_allowed=false
 ```
 
-## Public-Repo Use
+## Public Preview Use
 
-This folder can be used as a public preview repo only after Captain approval. Do not push, publish, submit, or list it externally without explicit approval for the exact platform and URL.
+This repo is the free public preview. Use it to inspect the workflow shape, safety boundary, agent metadata, and lite automation skeleton before buying the full kit.
 
 ## Agent Discovery
 

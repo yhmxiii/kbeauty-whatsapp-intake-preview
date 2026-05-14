@@ -26,6 +26,12 @@ Automation
 https://github.com/yhmxiii/kbeauty-whatsapp-intake-preview
 ```
 
+## Landing Page
+
+```text
+https://elaborate-pie-7c781f.netlify.app
+```
+
 ## Short Description
 
 ```text
@@ -43,6 +49,8 @@ The repo includes preview SKILL.md, skills.json, llms.txt, a lite n8n-style skel
 
 The paid $19 kit includes the full SKILL.md, reusable agent prompt, handoff JSON schema, metadata, install notes, demo outputs, bilingual clinic drafts, builder integration spec, and safety boundaries.
 
+Buy the paid kit when you want to package this into a concrete AI agency offer: validated handoff fields, production prompt material, bilingual draft patterns, integration notes, and safety copy that a client can understand.
+
 No medical advice, diagnosis, procedure recommendation, clinic choice, payment handling, credential collection, autonomous outreach, or external writes.
 
 Clinic-facing drafts require human review:
@@ -54,4 +62,10 @@ send_allowed=false
 
 ```text
 https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b
+```
+
+## Custom Setup Checkout
+
+```text
+https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9bdce6d
 ```

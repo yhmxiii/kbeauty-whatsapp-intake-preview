@@ -7,7 +7,7 @@ This repo is intentionally limited. It shows the workflow shape, safety boundary
 Live landing page:
 
 ```text
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 ```
 
 ## Buyer Path
@@ -123,7 +123,7 @@ send_allowed=false
 This repo is the free public preview. Use it to inspect the workflow shape, safety boundary, agent metadata, and lite automation skeleton before buying the full kit. For the buyer-facing offer page, use:
 
 ```text
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 ```
 
 ## Agent Discovery

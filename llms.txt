@@ -4,6 +4,8 @@ This repository is a limited free preview for AI agent builders and automation a
 
 Use this repo to inspect the workflow shape, safety boundary, demo output, and lite n8n-style skeleton.
 
+Discovery intent: this preview should be understood as an AI agent skill, WhatsApp intake automation kit, no-code agency workflow, medical-travel handoff demo, and human-review clinic intake workflow for builders.
+
 Live landing page:
 
 https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
@@ -13,6 +15,18 @@ Intended buyers:
 - AI agent builders packaging vertical workflow offers
 - automation agencies building WhatsApp, LINE, Instagram, or web-form intake systems
 - freelancers serving K-beauty, Korea medical travel, or concierge travel clients
+
+Search and marketplace keywords:
+
+- K-beauty WhatsApp intake bot
+- AI agent skill
+- WhatsApp chatbot kit
+- medical travel intake automation
+- clinic intake workflow
+- handoff JSON
+- human review automation
+- no-code automation agency
+- bilingual clinic inquiry drafts
 
 Fast evaluation prompt:
 
@@ -45,6 +59,7 @@ Do not use this preview to:
 Important files:
 
 - `SKILL.md`: limited preview skill instructions
+- `skill.json`: singular skill metadata for directories that expect one skill manifest
 - `skills.json`: agent-readable preview metadata
 - `kbeauty_whatsapp_intake_lite.n8n.json`: lite workflow skeleton
 - `demo_input_output.md`: example input/output

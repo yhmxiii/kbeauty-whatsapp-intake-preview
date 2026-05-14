@@ -2,8 +2,8 @@
   "skills": [
     {
       "name": "kbeauty-whatsapp-intake-preview",
-      "title": "K-beauty WhatsApp Intake Bot Kit Preview",
-      "description": "Limited public preview of a safe K-beauty / Korea medical-travel WhatsApp intake workflow for agent builders and automation agencies.",
+      "title": "WhatsApp Intake + Handoff Kit Preview",
+      "description": "Limited public preview of a safe WhatsApp intake-to-handoff workflow for agent builders and automation agencies, using K-beauty / Korea medical travel as the first demo vertical.",
       "version": "0.1.0-preview",
       "price": "free-preview",
       "paid_kit_price_usd": 19,
@@ -17,6 +17,7 @@
         "travel concierge workflow operators"
       ],
       "use_cases": [
+        "WhatsApp intake-to-handoff workflow",
         "K-beauty traveler intake",
         "Korea medical-travel inquiry triage",
         "WhatsApp-style next-question flow",
@@ -24,6 +25,7 @@
         "safe clinic-intake workflow scoping"
       ],
       "keywords": [
+        "WhatsApp intake handoff kit",
         "K-beauty WhatsApp intake bot",
         "AI agent skill",
         "WhatsApp chatbot kit",

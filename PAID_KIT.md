@@ -1,6 +1,6 @@
 # Paid Kit Contents
 
-The paid `K-beauty WhatsApp Intake Bot Kit for Agent Builders` is a $19 agent-ready ZIP for builders and automation agencies.
+The paid `WhatsApp Intake + Handoff Kit for Agent Builders` is a $19 agent-ready ZIP for builders and automation agencies. It includes a K-beauty / Korea medical-travel demo vertical as the first concrete workflow.
 
 This public repo is only a limited preview. It is meant to prove the workflow shape and safety boundary before purchase.
 
@@ -42,7 +42,7 @@ examples/demo_input_output.md
 
 ## Why Builders Buy It
 
-The public preview helps a builder evaluate the niche. The paid kit gives the reusable materials needed to turn that niche into a packaged automation offer:
+The public preview helps a builder evaluate the workflow shape. The paid kit gives the reusable materials needed to turn a messy WhatsApp intake into a packaged automation offer:
 
 - production-ready agent instructions instead of a preview-only prompt
 - a full handoff schema for validation, storage, and CRM-style routing

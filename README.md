@@ -6,6 +6,8 @@ This repo is intentionally limited. It shows the workflow shape, safety boundary
 
 This is designed to be discoverable as an AI agent skill, WhatsApp intake automation kit, no-code agency workflow, handoff workflow kit, and medical-travel demo for builders who need a concrete sellable artifact instead of a generic chatbot prompt.
 
+The fastest technical read is [HANDOFF_ARCHITECTURE.md](HANDOFF_ARCHITECTURE.md): it explains the minimum handoff packet, routing logic, and why the product is the handoff artifact rather than the chat itself.
+
 Live landing page:
 
 ```text
@@ -96,6 +98,7 @@ skill.json
 skills.json
 llms.txt
 kbeauty_whatsapp_intake_lite.n8n.json
+HANDOFF_ARCHITECTURE.md
 demo_input_output.md
 PAID_KIT.md
 SECURITY.md
@@ -142,6 +145,7 @@ For builders and agencies, the paid kit is useful because it turns a narrow vert
 
 - a reusable intake agent prompt instead of a loose chatbot brief
 - a handoff schema your automation can validate and store
+- a handoff architecture you can explain to n8n, Make, Zapier, Manychat, Voiceflow, Botpress, or custom workflow buyers
 - bilingual clinic inquiry drafts kept behind human review
 - implementation notes for adapting WhatsApp, LINE, Instagram, web forms, or concierge inboxes
 - agent-readable metadata for marketplaces, coding agents, and buyer evaluation

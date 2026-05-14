@@ -7,6 +7,8 @@
       "version": "0.1.0-preview",
       "price": "free-preview",
       "paid_kit_price_usd": 19,
+      "custom_setup_price_usd": 149,
+      "conversion_intent": "Use the public preview to pull builders to the live landing page, then route serious buyers to the paid kit checkout or custom setup checkout.",
       "buyer": [
         "AI agent builders",
         "automation agencies",
@@ -24,6 +26,7 @@
       "included_files": [
         "README.md",
         "SKILL.md",
+        "skills.json",
         "llms.txt",
         "kbeauty_whatsapp_intake_lite.n8n.json",
         "demo_input_output.md",
@@ -38,7 +41,20 @@
         "English/Korean clinic inquiry draft library",
         "builder integration spec",
         "install notes for multiple runtimes",
-        "paid kit metadata"
+        "production buyer metadata"
+      ],
+      "buyer_path": [
+        "Inspect the public preview workflow shape and safety boundary.",
+        "Open the live landing page for the complete buyer-facing offer.",
+        "Buy the $19 paid kit for the complete implementation assets.",
+        "Choose the $149 custom setup for one adapted client intake path."
+      ],
+      "paid_kit_buying_reasons": [
+        "turns a niche workflow idea into concrete implementation material",
+        "includes a production prompt and full handoff schema",
+        "includes bilingual clinic inquiry draft patterns for human review",
+        "includes integration notes for WhatsApp, LINE, Instagram, web forms, and concierge inboxes",
+        "includes safety boundary files and agent-readable metadata for buyer evaluation"
       ],
       "safety": {
         "medical_advice": false,
@@ -51,7 +67,9 @@
         "human_review_required": true,
         "send_allowed": false
       },
-      "checkout_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b"
+      "landing_page_url": "https://elaborate-pie-7c781f.netlify.app",
+      "checkout_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b",
+      "custom_setup_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9bdce6d"
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "name": "kbeauty-whatsapp-intake-preview",
+  "title": "K-beauty WhatsApp Intake Bot Kit Preview",
+  "description": "Free public preview of a K-beauty and Korea medical-travel WhatsApp intake workflow for AI agent builders, no-code freelancers, and automation agencies.",
+  "version": "0.1.0-preview",
+  "homepage_url": "https://kbeauty-intake-kit-yhmxiii-0514.netlify.app",
+  "repository_url": "https://github.com/yhmxiii/kbeauty-whatsapp-intake-preview",
+  "license": "MIT",
+  "category": "automation",
+  "price": "free-preview",
+  "paid_kit_price_usd": 19,
+  "custom_setup_price_usd": 149,
+  "buyer": [
+    "AI agent builders",
+    "automation agencies",
+    "no-code freelancers",
+    "WhatsApp bot builders",
+    "clinic-intake automation freelancers",
+    "travel concierge workflow operators"
+  ],
+  "keywords": [
+    "K-beauty WhatsApp intake bot",
+    "AI agent skill",
+    "WhatsApp chatbot kit",
+    "medical travel intake automation",
+    "clinic intake workflow",
+    "handoff JSON",
+    "human review automation",
+    "no-code automation agency",
+    "bilingual clinic inquiry drafts"
+  ],
+  "suggested_topics": [
+    "ai-agent",
+    "agent-skill",
+    "whatsapp",
+    "intake-automation",
+    "k-beauty",
+    "medical-travel",
+    "handoff-json",
+    "no-code",
+    "automation-agency",
+    "human-review"
+  ],
+  "use_cases": [
+    "K-beauty traveler intake",
+    "Korea medical-travel inquiry triage",
+    "WhatsApp-style next-question flow",
+    "human handoff preparation",
+    "safe clinic-intake workflow scoping"
+  ],
+  "entry_files": [
+    "README.md",
+    "SKILL.md",
+    "skills.json",
+    "llms.txt",
+    "kbeauty_whatsapp_intake_lite.n8n.json",
+    "demo_input_output.md"
+  ],
+  "safety": {
+    "medical_advice": false,
+    "diagnosis": false,
+    "procedure_recommendation": false,
+    "clinic_choice": false,
+    "payment_handling": false,
+    "credential_collection": false,
+    "autonomous_clinic_outreach": false,
+    "human_review_required": true,
+    "send_allowed": false
+  },
+  "checkout_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b",
+  "custom_setup_url": "https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9bdce6d"
+}

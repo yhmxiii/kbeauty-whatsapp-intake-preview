@@ -4,6 +4,12 @@ The paid `K-beauty WhatsApp Intake Bot Kit for Agent Builders` is a $19 agent-re
 
 This public repo is only a limited preview. It is meant to prove the workflow shape and safety boundary before purchase.
 
+Live landing page:
+
+```text
+https://elaborate-pie-7c781f.netlify.app
+```
+
 ## Buyer Gets
 
 ```text
@@ -33,6 +39,17 @@ examples/demo_input_output.md
 - human handoff rules
 - explicit `human_review_required=true`
 - explicit `send_allowed=false`
+
+## Why Builders Buy It
+
+The public preview helps a builder evaluate the niche. The paid kit gives the reusable materials needed to turn that niche into a packaged automation offer:
+
+- production-ready agent instructions instead of a preview-only prompt
+- a full handoff schema for validation, storage, and CRM-style routing
+- bilingual clinic inquiry draft patterns for human-reviewed coordinator workflows
+- integration notes for WhatsApp, LINE, Instagram, web forms, and concierge inboxes
+- agent-readable metadata for marketplace listings and coding-agent handoff
+- safety boundaries that make the offer easier to explain to clients
 
 ## Checkout
 

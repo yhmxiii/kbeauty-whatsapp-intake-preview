@@ -20,7 +20,7 @@ This is a free limited preview skill for builders evaluating whether a vertical 
 Live landing page:
 
 ```text
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 ```
 
 Use this preview to:

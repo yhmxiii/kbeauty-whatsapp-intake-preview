@@ -1,7 +1,7 @@
 {
   "name": "kbeauty-whatsapp-intake-preview",
-  "title": "K-beauty WhatsApp Intake Bot Kit Preview",
-  "description": "Free public preview of a K-beauty and Korea medical-travel WhatsApp intake workflow for AI agent builders, no-code freelancers, and automation agencies.",
+  "title": "WhatsApp Intake + Handoff Kit Preview",
+  "description": "Free public preview of a WhatsApp intake-to-handoff workflow for AI agent builders, no-code freelancers, and automation agencies. The first demo vertical is K-beauty and Korea medical travel.",
   "version": "0.1.0-preview",
   "homepage_url": "https://kbeauty-intake-kit-yhmxiii-0514.netlify.app",
   "repository_url": "https://github.com/yhmxiii/kbeauty-whatsapp-intake-preview",
@@ -19,6 +19,7 @@
     "travel concierge workflow operators"
   ],
   "keywords": [
+    "WhatsApp intake handoff kit",
     "K-beauty WhatsApp intake bot",
     "AI agent skill",
     "WhatsApp chatbot kit",
@@ -42,6 +43,7 @@
     "human-review"
   ],
   "use_cases": [
+    "WhatsApp intake-to-handoff workflow",
     "K-beauty traveler intake",
     "Korea medical-travel inquiry triage",
     "WhatsApp-style next-question flow",

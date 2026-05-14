@@ -6,7 +6,7 @@ Use this repo to inspect the workflow shape, safety boundary, demo output, and l
 
 Live landing page:
 
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 
 Intended buyers:
 

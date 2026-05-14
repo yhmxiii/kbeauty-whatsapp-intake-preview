@@ -23,9 +23,33 @@
         "human handoff preparation",
         "safe clinic-intake workflow scoping"
       ],
+      "keywords": [
+        "K-beauty WhatsApp intake bot",
+        "AI agent skill",
+        "WhatsApp chatbot kit",
+        "medical travel intake automation",
+        "clinic intake workflow",
+        "handoff JSON",
+        "human review automation",
+        "no-code automation agency",
+        "bilingual clinic inquiry drafts"
+      ],
+      "suggested_topics": [
+        "ai-agent",
+        "agent-skill",
+        "whatsapp",
+        "intake-automation",
+        "k-beauty",
+        "medical-travel",
+        "handoff-json",
+        "no-code",
+        "automation-agency",
+        "human-review"
+      ],
       "included_files": [
         "README.md",
         "SKILL.md",
+        "skill.json",
         "skills.json",
         "llms.txt",
         "kbeauty_whatsapp_intake_lite.n8n.json",

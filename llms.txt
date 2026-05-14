@@ -4,6 +4,8 @@ This repository is a limited free preview for AI agent builders and automation a
 
 Use this repo to inspect the workflow shape, safety boundary, demo output, and lite n8n-style skeleton.
 
+Start with `HANDOFF_ARCHITECTURE.md` when evaluating the implementation pattern. It explains the minimal handoff packet, routing logic, and why the workflow should produce a coordinator-ready artifact instead of only a chat reply.
+
 Discovery intent: this preview should be understood as an AI agent skill, WhatsApp intake automation kit, no-code agency workflow, handoff workflow kit, medical-travel handoff demo, and human-review clinic intake workflow for builders.
 
 Live landing page:
@@ -63,6 +65,7 @@ Important files:
 - `skill.json`: singular skill metadata for directories that expect one skill manifest
 - `skills.json`: agent-readable preview metadata
 - `kbeauty_whatsapp_intake_lite.n8n.json`: lite workflow skeleton
+- `HANDOFF_ARCHITECTURE.md`: minimal handoff packet and routing architecture
 - `demo_input_output.md`: example input/output
 - `PAID_KIT.md`: paid kit contents and checkout
 - `SECURITY.md`: safety and non-executable boundary

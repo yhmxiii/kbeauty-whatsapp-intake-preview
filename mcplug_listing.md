@@ -29,7 +29,7 @@ https://github.com/yhmxiii/kbeauty-whatsapp-intake-preview
 ## Landing Page
 
 ```text
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 ```
 
 ## Short Description

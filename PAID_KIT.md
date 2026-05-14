@@ -7,7 +7,7 @@ This public repo is only a limited preview. It is meant to prove the workflow sh
 Live landing page:
 
 ```text
-https://elaborate-pie-7c781f.netlify.app
+https://kbeauty-intake-kit-yhmxiii-0514.netlify.app
 ```
 
 ## Buyer Gets

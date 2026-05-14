@@ -4,6 +4,10 @@ This repository is a limited free preview for AI agent builders and automation a
 
 Use this repo to inspect the workflow shape, safety boundary, demo output, and lite n8n-style skeleton.
 
+Live landing page:
+
+https://elaborate-pie-7c781f.netlify.app
+
 Intended buyers:
 
 - AI agent builders packaging vertical workflow offers
@@ -51,6 +55,17 @@ Important files:
 
 The full paid kit includes production SKILL.md, reusable agent prompt, handoff JSON schema, metadata, install notes, bilingual clinic inquiry drafts, builder integration spec, demo outputs, and safety boundaries.
 
+Why a builder should buy the paid kit:
+
+- the preview shows the workflow shape, but not the production implementation pack
+- the paid kit packages a concrete vertical offer for AI agent builders and automation agencies
+- it includes a full prompt, handoff schema, integration spec, demo outputs, bilingual clinic draft patterns, and safety boundary files
+- it is designed to help a builder move from idea validation to a client-ready intake automation scope
+
 Paid kit checkout:
 
 https://kbeautytrip.lemonsqueezy.com/checkout/buy/4e42febb-e84d-4598-b5c2-0d7b35ff664b
+
+Custom setup checkout:
+
+https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9bdce6d

@@ -1,10 +1,10 @@
-# K-beauty WhatsApp Intake Bot Kit - Free Preview
+# WhatsApp Intake + Handoff Kit - K-beauty Free Preview
 
-Free public preview for agent builders and automation agencies evaluating a K-beauty / Korea medical-travel WhatsApp intake workflow.
+Free public preview for agent builders and automation agencies evaluating a WhatsApp intake-to-handoff workflow. The first demo vertical is K-beauty / Korea medical travel.
 
 This repo is intentionally limited. It shows the workflow shape, safety boundary, and a lite n8n-style skeleton without publishing the full paid kit.
 
-This is designed to be discoverable as an AI agent skill, WhatsApp intake automation kit, no-code agency workflow, and medical-travel handoff demo for builders who need a concrete vertical offer instead of a generic chatbot prompt.
+This is designed to be discoverable as an AI agent skill, WhatsApp intake automation kit, no-code agency workflow, handoff workflow kit, and medical-travel demo for builders who need a concrete sellable artifact instead of a generic chatbot prompt.
 
 Live landing page:
 
@@ -32,8 +32,10 @@ Use these terms when evaluating or listing the preview:
 
 ```text
 kbeauty-whatsapp-intake-preview
+whatsapp-intake-handoff-kit
 K-beauty WhatsApp intake bot
 AI agent skill
+WhatsApp intake handoff kit
 WhatsApp chatbot kit
 medical travel intake automation
 clinic intake workflow
@@ -133,6 +135,8 @@ https://kbeautytrip.lemonsqueezy.com/checkout/buy/a48de118-81aa-4ae4-af8f-2e3bd9
 ## Why Buy The Paid Kit
 
 Buy the paid kit when you want to stop reverse-engineering the preview and start assembling a sellable automation offer. The preview proves the public workflow shape; the paid ZIP gives you the production prompt, full handoff schema, install notes, bilingual clinic inquiry draft library, builder integration spec, demo outputs, and safety boundary files needed to package the workflow for client delivery.
+
+The broader category is WhatsApp intake-to-handoff automation. K-beauty / Korea medical travel is the first concrete demo vertical.
 
 For builders and agencies, the paid kit is useful because it turns a narrow vertical idea into concrete implementation material:
 
